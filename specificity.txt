@@ -1,0 +1,11 @@
+Paragraphs A, B, C and D all recieve similar styles but differ in values, for example,
+they are all different colors, some of them have border, some have that border solid or 
+with linie punctata.
+Paragraph B has a border left.
+Text font also differs.
+
+
+Browser uses warning.info properties because it overwrites the previous ones.
+
+Style (properties) written in HTML style does not change the class incorporated into the 
+elemnt box containing reference to style from an outside style sheet.

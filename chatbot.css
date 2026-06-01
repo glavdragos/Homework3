@@ -1,0 +1,36 @@
+/* CSS styles */
+body {
+    background-color: rgb(57, 7, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300%;
+    margin: 100px;
+    flex-direction: column;
+}
+
+.chat-container {
+    max-width: 600px;
+    width: 50%;
+    height: 500px;
+    padding: 35px;
+    background-color:rgb(37, 130, 125) ;
+    border-radius: 50px;
+    box-shadow: 1px 4px 8px rgba(39, 88, 57, 0.86);
+    margin-bottom: 20px;
+    overflow-y: auto;
+    border: 3px solid rgb(101, 219, 215);
+    transition: all 0.3s ease;    
+}
+
+.chat-container:hover {
+    scale : 1.05;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+#chat-form {
+    display: flex;
+}

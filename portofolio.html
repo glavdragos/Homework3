@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="portofolio.css">
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+            <li><a href="card.html">Card</a></li>
+        </ul>
+    </nav>
+<main>
+    <h1>My Portfolio</h1>
+    <form id="project-form">
+        <fieldset>
+            <legend>Personal Projects</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <span id="name-error"></span>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <span id="description-error"></span>
+
+        <label for="tech">Technologies</label>
+        <select id="tech" name="tech" multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+        </select>
+        <span id="tech-error"></span><br>
+
+        <label for="url">Project URL:</label>
+        <input type="url" id="url" name="url"><br>
+        <span id="url-error"></span>
+
+        <label for="date">Completion Date</label>
+        <input type="date" id="date" name="date">
+        <span id="date-error"></span>
+
+        <label for="image">Project Image:</label>
+        <input type="file" id="image" name="image" accept="image/*"><br>
+        <span id="image-error"></span>
+
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <div class="table-wrapper">
+    <table>
+        <caption>Projects</caption>
+        <thead>
+            <tr>
+                <th scope = "col">Name</th>
+                <th scope = "col">Description</th>
+                <th scope = "col">URL</th>
+                <th scope = "col">Completion Date</th>
+                <th scope = "col">Image</th>
+                <th scope = "col">Technologies</th>
+            </tr>
+        </thead>
+        <tbody id="project-table-body">
+        </tbody>
+    </table>
+    </div>
+</main>
+<script src="portofolio.js"></script>
+</body>
